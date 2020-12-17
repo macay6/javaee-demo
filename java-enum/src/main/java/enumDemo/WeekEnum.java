@@ -63,4 +63,13 @@ public enum WeekEnum {
 //                ", date='" + date + '\'' +
 //                '}';
 //    }
+    // 通过枚举的属性date获取枚举值
+    public static WeekEnum getWeekEnum(String val) {
+        for (WeekEnum weekEnum : WeekEnum.values()) {
+            if (weekEnum.getDate().equals(val)) {
+                return weekEnum;
+            }
+        }
+        return null;
+    }
 }

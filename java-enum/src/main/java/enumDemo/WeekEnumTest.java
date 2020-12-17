@@ -62,6 +62,16 @@ public class WeekEnumTest {
     }
 
     /**
+     * 通过compareTo方法比较俩个枚举值
+     */
+    @Test
+    public void testComparedTo() {
+        if(WeekEnum.MONDay.compareTo(WeekEnum.MONDay) == 0) {
+            System.out.println("这两个枚举值是相等的");
+        }
+    }
+
+    /**
      * 枚举对象的方法
      */
     @Test
@@ -91,6 +101,41 @@ public class WeekEnumTest {
         // valueOf(String name),返回带指定名称的指定枚举类型的枚举常量，名称必须与在此类型中声明枚举常量所用的标识符完全匹配
         WeekEnum monDay = WeekEnum.valueOf("MONDay");
         System.out.println(monDay);
+
+    }
+
+    /**
+     * 测试通过枚举属性获取枚举实例的方法
+     */
+    @Test
+    public void testGetWeekEnum() {
+        WeekEnum weekEnum = WeekEnum.getWeekEnum("星期一");
+        switch (weekEnum) {
+            case MONDay:
+                System.out.println("这是星期一");
+                break;
+            case TUESDAY:
+                System.out.println("这是星期二");
+                break;
+            case WEDNESDAY:
+                System.out.println("这是星期三");
+                break;
+            case THURSDAY:
+                System.out.println("这是星期四");
+                break;
+            case FRIDAY:
+                System.out.println("这是星期五");
+                break;
+            case SATURDAY:
+                System.out.println("这是星期六");
+                break;
+            case SUNDAY:
+                System.out.println("这是星期日");
+                break;
+            default:
+                System.out.println("哈哈哈");
+                break;
+        }
 
     }
 }
