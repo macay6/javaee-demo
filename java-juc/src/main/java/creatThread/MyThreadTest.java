@@ -14,38 +14,41 @@ public class MyThreadTest {
         thread2.start();
 
     }
-    static class MyThread1 extends Thread {
-        public MyThread1(String name) {
-            super(name);
-        }
+}
 
-        @Override
-        public void run() {
-            for (int i = 0; i < 5; i++) {
-                System.out.println(Thread.currentThread().getName() + "-------第" + i + "次执行");
-//                try {
-//                    Thread.sleep(10);
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-            }
-        }
+class MyThread1 extends Thread {
+    public MyThread1(String name) {
+        super(name);
     }
-    static class MyThread2 extends Thread {
-        public MyThread2(String name) {
-            super(name);
-        }
 
-        @Override
-        public void run() {
-            for (int i = 0; i < 5; i++) {
-                System.out.println(Thread.currentThread().getName() + "-------第" + i + "次执行");
+    @Override
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println(Thread.currentThread().getName() + "-------第" + i + "次执行");
 //                try {
 //                    Thread.sleep(10);
 //                } catch (InterruptedException e) {
 //                    e.printStackTrace();
 //                }
-            }
         }
     }
 }
+
+class MyThread2 extends Thread {
+    public MyThread2(String name) {
+        super(name);
+    }
+
+    @Override
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println(Thread.currentThread().getName() + "-------第" + i + "次执行");
+//                try {
+//                    Thread.sleep(10);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+        }
+    }
+}
+
