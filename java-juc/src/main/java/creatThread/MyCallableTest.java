@@ -11,7 +11,7 @@ import java.util.concurrent.FutureTask;
  * @Date: 2021/2/9 5:17 下午
  */
 public class MyCallableTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // 2、执行 Callable 方式，需要 FutureTask 实现类的支持，用于接收运算结果。
         // 使用FutureTask类来包装Callable对象，该FutureTask对象封装了Callable对象的call()方法的返回值
         FutureTask<Integer> futureTask = new FutureTask<Integer>(new MyCallable1());
@@ -29,16 +29,17 @@ public class MyCallableTest {
         System.out.println(integer);
 
     }
+}
 
-    // 1、创建Callable接口的实现类，并实现call()方法,然后创建该实现类的实例。
-    static class MyCallable1 implements Callable<Integer> {
-        // 方法的返回值类型与上面Callable后面的泛型一致
-        public Integer call() throws Exception {
-            int sum = 0;
-            for (int i = 0; i < 10; i++) {
-                sum += i;
-            }
-            return sum;
+// 1、创建Callable接口的实现类，并实现call()方法,然后创建该实现类的实例。
+class MyCallable1 implements Callable<Integer> {
+    // 方法的返回值类型与上面Callable后面的泛型一致
+    public Integer call() throws Exception {
+        int sum = 0;
+        for (int i = 0; i < 10; i++) {
+            sum += i;
         }
+        return sum;
     }
 }
+
