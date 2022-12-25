@@ -8,6 +8,10 @@ package strategy.d;
  */
 // 有抽象方法，定义为抽象类
 public abstract class Duck {
+
+    public Duck() {
+    }
+
     private FlyBehiavor fb;
 
     private QuackBehavior qb;

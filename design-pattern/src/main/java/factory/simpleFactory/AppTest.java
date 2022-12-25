@@ -10,7 +10,7 @@ import factory.Food;
  */
 public class AppTest {
     public static void main(String[] args) {
-        Food food = SimpleFoodFactory.getFood("hamburage");
+        Food food = SimpleFoodFactory1.getFood("hamburage");
         food.eat();
     }
 }

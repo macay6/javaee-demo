@@ -9,6 +9,14 @@ package strategy.d;
 // 绿头鸭
 public class MallardDuck extends Duck {
 
+    public MallardDuck() {
+        super();
+    }
+
+    public MallardDuck(FlyBehiavor fb, QuackBehavior qb) {
+        super(fb, qb);
+    }
+
     @Override
     public void display() {
         System.out.println("外观是绿头鸭");

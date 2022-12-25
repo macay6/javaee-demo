@@ -1,7 +1,7 @@
 package enumDemo;
 
 /**
- * @ClassName: ColorEnum
+ * @ClassName: ColorEnumhttps://github.com/macay6/java-common-utils.gitgit
  * @Description: 颜色枚举类（无参）
  * @Author: Macay
  * @Date: 2020/12/16 12:19 上午

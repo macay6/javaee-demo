@@ -8,6 +8,10 @@ package strategy.d;
  */
 // 红头鸭
 public class RedHeadDuck extends Duck {
+    public RedHeadDuck(FlyBehiavor fb, QuackBehavior qb) {
+        super(fb, qb);
+    }
+
     @Override
     public void display() {
         System.out.println("外观是红头鸭");

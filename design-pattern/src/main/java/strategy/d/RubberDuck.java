@@ -9,6 +9,10 @@ package strategy.d;
 // 橡皮鸭
 public class RubberDuck extends Duck{
 
+    public RubberDuck(FlyBehiavor fb, QuackBehavior qb) {
+        super(fb, qb);
+    }
+
     @Override
     public void display() {
         System.out.println("外观是橡皮鸭");
