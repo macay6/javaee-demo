@@ -7,6 +7,7 @@ package flyweight;
  * @Date: 2022/8/25 9:18 下午
  */
 public class ConcreteFlyweight implements IFlyweight {
+
     private String intrinsicState;
 
     public ConcreteFlyweight(String intrinsicState) {
