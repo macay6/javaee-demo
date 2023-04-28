@@ -7,6 +7,7 @@ package decorator.a;
  * @Date: 2022/8/29 10:02 下午
  */
 public class AppTest {
+
     public static void main(String[] args) {
         FastFood firedRice = new FiredRice();
         FastFood firedNoodles = new FiredNoodles();
