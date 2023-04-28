@@ -9,7 +9,7 @@ package memento.a;
 public class AppTest {
 
     public static void main(String[] args) {
-        System.out.println("------------大战Boss前------------");
+        System.out.println("------------大战Boss前-----------");
         //大战Boss前
         GameRole gameRole = new GameRole();
         // 初始化状态
