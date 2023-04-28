@@ -7,6 +7,7 @@ package factory.methodFactory;
  * @Date: 2022/7/23 11:14 上午
  */
 public class AppTest {
+
 //    public static void main(String[] args) {
 //        FoodFactory foodFactory = new RiceFactory();
 //        Food food = foodFactory.getFood();
