@@ -7,6 +7,7 @@ package clone;
  * @Date: 2022/8/6 3:33 下午
  */
 public class AppTest {
+
     public static void main(String[] args) throws CloneNotSupportedException {
         Citation citation = new Citation();
         citation.setName("张三");
